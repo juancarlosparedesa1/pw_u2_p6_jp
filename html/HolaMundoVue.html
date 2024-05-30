@@ -13,10 +13,23 @@
     <div id="myApp">
         <header></header>
         <nav></nav>
-        <section></section>
+        <section>
+            <h1>Hola Mundo desde Vue.JS</h1>
+            <p>{{1+1}}</p>
+            <p>{{[1,2,3,4]}}</p>
+            <p>{{false?'True':'False'}}</p>
+            <p>{{mensaje}}</p>
+            <p>{{valor}}</p>
+            <button v-on:click="cambiarTexto">Cambiar Texto</button>
+            <button v-on:click="sumar">Sumar</button>
+
+        </section>
         <aside></aside>
         <footer></footer>
     </div>
+    <!-- fuera del control de vue -->
+    <p>{{1+1}}</p>
+    <p>{{valor}}</p>
     <script src="../js/app.js"></script>
 </body>
 
